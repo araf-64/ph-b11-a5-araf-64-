@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="w-screen h-screen bg-[#f4f7ff] pt-5 font-[poppins]">
+    <!-- header section -->
+    <header class="w-10/12 max-w-screen-2xl bg-white mx-auto p-5 rounded-xl">
+      <nav>
+        <section class="flex items-center justify-between">
+          <div class="flex items-center text-4xl gap-4">
+            <img src="assets/logo.png" alt="" />
+            <h2>Dev<span class="font-bold">Board</span></h2>
+          </div>
+          <div>
+            <button class="btn bg-[#3752FD] text-white rounded-lg">
+              Back to Desk
+            </button>
+          </div>
+        </section>
+      </nav>
+    </header>
+    <!-- main section -->
+    <main class="w-10/12 max-w-screen-2xl mx-auto mt-6">
+      <section class="space-y-5">
+        <div>
+            <h2 class="text-2xl font-bold text-center">Blogs</h2>
+        </div>
+        <!-- Accordion with arrow icon section one -->
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+          <input type="radio" name="my-accordion-2" checked="checked" />
+          <div class="collapse-title font-semibold">
+            What are the different ways to select an element in the DOM?
+          </div>
+          <div class="collapse-content text-sm bg-[#f4f7ff] rounded-xl m-2 p-2 ">
+            <p class="font-semibold">There are several ways to select an element in the DOM:</p>
+            <ol>
+                <li>1. <span class="text-red-300 font-semibold">getElementById()</span> to select an element by its unique ID.</li>
+                <li>2. <span class="text-red-300 font-semibold">getElementsByClassName()</span> to select elements that share the same class name.</li>
+                <li>3. <span class="text-red-300 font-semibold">getElementsByTagName()</span> to select elements based on their tag name.</li>
+                <li>4. <span class="text-red-300 font-semibold">querySelector()</span> allows you to select the first matching element using a CSS selector.</li>
+                <li>5. <span class="text-red-300 font-semibold">querySelectorAll()</span> selects all matching elements and returns them as a collection.</li>
+
+            </ol>
+          </div>
+        </div>
+        
+        <!-- Accordion with arrow icon section two-->
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+          <input type="radio" name="my-accordion-2" checked="checked" />
+          <div class="collapse-title font-semibold">
+            What is the difference between innerHTML, innerText, and textContent ?
+          </div>
+          <div class="collapse-content text-sm bg-[#f4f7ff] rounded-xl m-2 p-2 ">
+            <p class="font-semibold">Difference Between innerHTML, innerText, and textContent:</p>
+            <p>
+                The properties <span class="text-blue-400 font-semibold">innerHTML</span>, <span class="text-blue-400 font-semibold">innerText</span>, and <span class="text-blue-400 font-semibold">textContent</span> are used to access or modify the content inside an element, but they function differently. <span class="text-blue-400 font-semibold">innerHTML</span> retrieves or sets the HTML inside an element, meaning it includes tags and formatting. <span class="text-blue-400 font-semibold">innerText</span> extracts only the visible text while ignoring hidden elements and applying CSS styles. <span class="text-blue-400 font-semibold">textContent</span>, on the other hand, retrieves or sets all the text inside an element, including hidden content, but does not preserve HTML formatting.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Accordion with arrow icon section three-->
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+          <input type="radio" name="my-accordion-2" checked="checked" />
+          <div class="collapse-title font-semibold">
+            What is event delegation in the DOM?
+          </div>
+          <div class="collapse-content text-sm bg-[#f4f7ff] rounded-xl m-2 p-2 ">
+            <p class="font-semibold">Understanding Event Delegation:</p>
+            <p>
+                <span class="text-teal-400 font-semibold">Event delegation</span> is a technique in JavaScript where a parent element is used to handle events for its child elements, even if they are added dynamically. Instead of adding event listeners to multiple individual elements, you attach a single event listener to the parent, which listens for events bubbling up from its children. This approach improves performance and simplifies event handling in dynamic applications.
+            </p>
+          </div>
+        </div>
+
+        <!-- Accordion with arrow icon section four-->
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+          <input type="radio" name="my-accordion-2" checked="checked" />
+          <div class="collapse-title font-semibold">
+            What is event bubbling in the DOM?
+          </div>
+          <div class="collapse-content text-sm bg-[#f4f7ff] rounded-xl m-2 p-2 ">
+            <p class="font-semibold">Concept of Event Bubbling:</p>
+            <p>
+                <span class="text-purple-400 font-semibold">Event bubbling</span> is a process in the DOM where an event that occurs on a child element propagates upward to its parent elements. When an event is triggered, it first executes on the target element and then moves up the hierarchy, triggering event listeners on parent elements along the way. This behavior allows higher-level elements to capture and respond to events originating from their children. If needed, bubbling can be stopped using methods like <span class="text-purple-400 font-semibold">event.stopPropagation()</span>.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Accordion with arrow icon section five-->
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+          <input type="radio" name="my-accordion-2" checked="checked" />
+          <div class="collapse-title font-semibold">
+            How do you create, add, and remove elements using JavaScript?
+          </div>
+          <div class="collapse-content text-sm bg-[#f4f7ff] rounded-xl m-2 p-2 ">
+            <p class="font-semibold">Creating, Adding, and Removing Elements in JavaScript:</p>
+            <p>
+                In <span class="text-cyan-400 font-semibold">JavaScript</span>, elements can be created, added, and removed dynamically. To create an element, you define it in JavaScript before inserting it into the DOM. Once created, the element can be added to a parent element in the document to make it visible on the webpage. If an element is no longer needed, it can be removed from the DOM to free up resources and maintain a clean structure.
+            </p>
+          </div>
+        </div>
+        
+
+
+      </section>
+    </main>
+  </body>
+</html>
