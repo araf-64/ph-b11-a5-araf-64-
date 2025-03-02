@@ -1,7 +1,7 @@
 const buttons = document.getElementsByClassName("complete-btn");
 for(const button of buttons){
     button.addEventListener("click", function(){
-        alert('Board Updated Successfully')
+        alert('Dashboard Updated Successfully')
         this.disabled = true;
         const submittedAssignment = getInputValueById("total-submission");
         const taskAssign = getInputValueById("total-task");
@@ -9,13 +9,30 @@ for(const button of buttons){
         const existingAssignment = taskAssign-1;
         document.getElementById("total-submission").innerText =updatedAssignment;
         document.getElementById("total-task").innerText = existingAssignment;
-        
+        if(existingAssignment === 0){
+            alert("Congrates!!! You have completed all the current task")
+        }
 
-    });
+        // activity log section js
+         const card = this.parentNode.parentNode.parentNode;
+
+         const titleElement = card.querySelector(".card-title");
+         if (titleElement) {
+             const taskText = titleElement.innerText;
+ 
+             const activityList = document.getElementById("activity-list");
+             const activityItem = document.createElement("div");
+
+             activityItem.classList.add("p-3", "rounded-xl", "bg-[#f4f7ff]");
+             activityItem.innerText = `You have completed the task ${taskText} at ${formattedTime}`;
+ 
+             activityList.appendChild(activityItem);
+         }
+    });   
+
+
 }
-const submissionEndAlert = document.getElementById("complete-btn").addEventListener("click", function() {
-    submissionEndAlert = confirm("Congrates!!! You have completed all the current task");
-});
+
 
 const activityList = document.getElementById("activity-list");
 document.getElementById("clear-btn").addEventListener("click", function(){

@@ -17,7 +17,7 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body id="bg-color" class="w-screen h-screen bg-[#f4f7ff] pt-5 font-[poppins]">
+  <body class="w-screen h-screen bg-[#f4f7ff] pt-5 font-[poppins]">
     <!-- header section -->
     <header class="w-10/12 max-w-screen-2xl bg-white mx-auto p-5 rounded-xl">
       <nav>
@@ -89,14 +89,12 @@
             <div class="border border-dashed my-5 text-[#3751fd27]"></div>
 
             <!-- div containing 6 grid card box -->
-            <div class="grid grid-cols-3 gap-5">
+            <div id="cards-container" class="grid grid-cols-3 gap-5">
 
               <!-- Cards -->
               <div  class="bg-[#f4f7ff] p-5 rounded-xl">
                 <span class="bg-white rounded-xl px-3 py-2">ShopEase</span>
-                <h3 class="text-xl font-semibold my-4">
-                  Fix Mobile Button Issue
-                </h3>
+                <h3 class="card-title text-xl font-semibold my-4">Fix Mobile Button Issue</h3>
                 <textarea
                   class="w-full bg-white border-none rounded-xl p-3"
                   rows="3"
@@ -119,7 +117,7 @@
               <!-- Cards -->
               <div class="bg-[#f4f7ff] p-5 rounded-xl">
                 <span class="bg-white rounded-xl px-3 py-2">CloudSync</span>
-                <h3 class="title text-xl font-semibold my-4">Add Dark Mode</h3>
+                <h3 class="card-title text-xl font-semibold my-4">Add Dark Mode</h3>
                 <textarea
                   class="w-full bg-white border-none rounded-xl p-3"
                   rows="3"
@@ -142,7 +140,7 @@
               <!-- Cards -->
               <div class="bg-[#f4f7ff] p-5 rounded-xl">
                 <span class="bg-white rounded-xl px-3 py-2">SwiftPay</span>
-                <h3 class="text-xl font-semibold my-4">Optimize Home Page</h3>
+                <h3 class="card-title text-xl font-semibold my-4">Optimize Home Page</h3>
                 <textarea
                   class="w-full bg-white border-none rounded-xl p-3"
                   rows="3"
@@ -165,7 +163,7 @@
               <!-- Cards -->
               <div class="bg-[#f4f7ff] p-5 rounded-xl">
                 <span class="bg-white rounded-xl px-3 py-2">Meta</span>
-                <h3 class="text-xl font-semibold my-4">Add New Emoji ❤️</h3>
+                <h3 class="card-title text-xl font-semibold my-4">Add New Emoji ❤️</h3>
                 <textarea
                   class="w-full bg-white border-none rounded-xl p-3"
                   rows="3"
@@ -188,7 +186,7 @@
               <!-- Cards -->
               <div class="bg-[#f4f7ff] p-5 rounded-xl">
                 <span class="bg-white rounded-xl px-3 py-2">Google LLC</span>
-                <h3 class="text-xl font-semibold my-4">Integrate OpneAI API</h3>
+                <h3 class="card-title text-xl font-semibold my-4">Integrate OpneAI API</h3>
                 <textarea
                   class="w-full bg-white border-none rounded-xl p-3"
                   rows="3"
@@ -211,7 +209,7 @@
               <!-- Cards -->
               <div class="bg-[#f4f7ff] p-5 rounded-xl">
                 <span class="bg-white rounded-xl px-3 py-2">GlassDoor</span>
-                <h3 class="text-xl font-semibold my-4">
+                <h3 class="card-title text-xl font-semibold my-4">
                   Improve Job Searching
                 </h3>
                 <textarea

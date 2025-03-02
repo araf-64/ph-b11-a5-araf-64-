@@ -9,4 +9,3 @@ const button = document.getElementById("toggle-btn");
             }
         });
     }
-
