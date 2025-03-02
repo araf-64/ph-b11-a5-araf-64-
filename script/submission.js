@@ -10,6 +10,7 @@ for(const button of buttons){
         document.getElementById("total-submission").innerText =updatedAssignment;
         document.getElementById("total-task").innerText = existingAssignment;
         
+
     });
 }
 const submissionEndAlert = document.getElementById("complete-btn").addEventListener("click", function() {
@@ -21,4 +22,22 @@ document.getElementById("clear-btn").addEventListener("click", function(){
     activityList.innerText = " ";
 })
 
+
+// function to set random bg color
+function getRandomColor() {
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+    return `rgb(${r}, ${g}, ${b})`;
+}
+
+document.addEventListener("click", function () {
+    const button = document.getElementById("theme-btn");
+    
+    if (button) {
+        button.addEventListener("click", function () {
+            document.body.style.backgroundColor = getRandomColor();
+        });
+    }
+});
 
