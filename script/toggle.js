@@ -1,13 +1,12 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const button = document.getElementById("toggle-btn");
+const button = document.getElementById("toggle-btn");
 
     if (button) {
         button.addEventListener("click", function () {
             if (window.location.pathname.includes("index.html")) {
-                window.location.href = "blogs.html"; // Switch to Page 2
+                window.location.href = "blogs.html";
             } else {
-                window.location.href = "index.html"; // Switch to Page 1
+                window.location.href = "index.html";
             }
         });
     }
-});
+
