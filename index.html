@@ -57,7 +57,7 @@
                   <h3 id="total-task" class="text-3xl font-bold">6</h3>
                 </div>
               </div>
-              <div id="discover-btn"
+              <div id="toggle-btn"
                 class="col-span-2 flex items-center gap-5 bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] p-5 rounded-xl px-6">
                 <img src="assets/board.png" alt="" />
                 <p class="text-2xl text-white">
@@ -94,7 +94,7 @@
               <!-- Cards -->
               <div  class="bg-[#f4f7ff] p-5 rounded-xl">
                 <span class="bg-white rounded-xl px-3 py-2">ShopEase</span>
-                <h3 id="title" class="title text-xl font-semibold my-4">
+                <h3 class="text-xl font-semibold my-4">
                   Fix Mobile Button Issue
                 </h3>
                 <textarea
@@ -251,18 +251,16 @@
           </div>
           <!-- Border dashed -->
           <div class="border border-dashed my-5 text-[#3751fd27]"></div>
+
           <!-- It will contain all the history -->
           <div id="activity-list" class="flex flex-col gap-4">
           </div>
+
         </div>
       </section>
     </main>
 
-     <script>
-      document.getElementById('discover-btn').addEventListener('click', function(){
-        window.location.href = "blogs.html"
-      })
-    </script>
+    <script src="./script/toggle.js"></script>
     <script src="./script/utilities.js"></script>
     <script src="./script/submission.js"></script>
     <script src="./script/date.js"></script>
